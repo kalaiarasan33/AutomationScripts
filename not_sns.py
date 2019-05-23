@@ -5,7 +5,7 @@ cloudtrail = boto3.client('cloudtrail')
 sender = 'kalaiarasanbalaraman@gmail.com'
 receiver = ['phoenixkalai33@gmail.com']
 smtp_user = 'kalaiarasanbalaraman@gmail.com'
-smtp_pass = 'July@1992'
+smtp_pass = 'password'
 
 ins_sid = [] 
 ins_tid = [] 
