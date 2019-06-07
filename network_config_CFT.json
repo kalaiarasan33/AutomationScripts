@@ -1,0 +1,745 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Outputs": {
+        "SecurityGroupprivate": {
+            "Description": "private security group",
+            "Export": {
+                "Name": {
+                    "Fn::Sub": "SecurityGroupprivate-SecurityGroupID"
+                }
+            },
+            "Value": {
+                "Fn::GetAtt": [
+                    "SecurityGroupprivate",
+                    "GroupId"
+                ]
+            }
+        },
+        "SecurityGroupprivateVPC1": {
+            "Description": "public security group",
+            "Export": {
+                "Name": {
+                    "Fn::Sub": "SecurityGroupprivateVPC1-SecurityGroupID"
+                }
+            },
+            "Value": {
+                "Fn::GetAtt": [
+                    "SecurityGroupprivateVPC1",
+                    "GroupId"
+                ]
+            }
+        },
+        "SecurityGroupprivateVPC2": {
+            "Description": "public security group",
+            "Export": {
+                "Name": {
+                    "Fn::Sub": "SecurityGroupprivateVPC2-SecurityGroupID"
+                }
+            },
+            "Value": {
+                "Fn::GetAtt": [
+                    "SecurityGroupprivateVPC2",
+                    "GroupId"
+                ]
+            }
+        },
+        "SecurityGrouppublic": {
+            "Description": "public security group",
+            "Export": {
+                "Name": {
+                    "Fn::Sub": "SecurityGrouppublic-SecurityGroupID"
+                }
+            },
+            "Value": {
+                "Fn::GetAtt": [
+                    "SecurityGrouppublic",
+                    "GroupId"
+                ]
+            }
+        },
+        "SecurityGrouppublicVPC1": {
+            "Description": "private security group",
+            "Export": {
+                "Name": {
+                    "Fn::Sub": "SecurityGrouppublicVPC1-SecurityGroupID"
+                }
+            },
+            "Value": {
+                "Fn::GetAtt": [
+                    "SecurityGrouppublicVPC1",
+                    "GroupId"
+                ]
+            }
+        },
+        "SecurityGrouppublicVPC2": {
+            "Description": "private security group",
+            "Export": {
+                "Name": {
+                    "Fn::Sub": "SecurityGrouppublicVPC2-SecurityGroupID"
+                }
+            },
+            "Value": {
+                "Fn::GetAtt": [
+                    "SecurityGrouppublicVPC2",
+                    "GroupId"
+                ]
+            }
+        },
+        "VPC": {
+            "Description": "VPC id",
+            "Export": {
+                "Name": {
+                    "Fn::Sub": "VPC-VpcId"
+                }
+            },
+            "Value": {
+                "Ref": "VPC"
+            }
+        },
+        "VPC1": {
+            "Description": "VPC1 id",
+            "Export": {
+                "Name": {
+                    "Fn::Sub": "VPC1-VpcId"
+                }
+            },
+            "Value": {
+                "Ref": "VPC1"
+            }
+        },
+        "VPC2": {
+            "Description": "VPC1 id",
+            "Export": {
+                "Name": {
+                    "Fn::Sub": "VPC2-VpcId"
+                }
+            },
+            "Value": {
+                "Ref": "VPC2"
+            }
+        },
+        "privateVPC1": {
+            "Description": "private subnets",
+            "Export": {
+                "Name": {
+                    "Fn::Sub": "privateVPC1-SubnetID"
+                }
+            },
+            "Value": {
+                "Ref": "privateVPC1"
+            }
+        },
+        "privateVPC2": {
+            "Description": "private subnets",
+            "Export": {
+                "Name": {
+                    "Fn::Sub": "privateVPC2-SubnetID"
+                }
+            },
+            "Value": {
+                "Ref": "privateVPC2"
+            }
+        },
+        "privatekalai": {
+            "Description": "private subnets",
+            "Export": {
+                "Name": {
+                    "Fn::Sub": "privatekalai-SubnetID"
+                }
+            },
+            "Value": {
+                "Ref": "privatekalai"
+            }
+        },
+        "publicVPC1": {
+            "Description": "public subnets",
+            "Export": {
+                "Name": {
+                    "Fn::Sub": "publicVPC1-SubnetID"
+                }
+            },
+            "Value": {
+                "Ref": "publicVPC1"
+            }
+        },
+        "publicVPC2": {
+            "Description": "public subnets",
+            "Export": {
+                "Name": {
+                    "Fn::Sub": "publicVPC2-SubnetID"
+                }
+            },
+            "Value": {
+                "Ref": "publicVPC2"
+            }
+        },
+        "publickalai": {
+            "Description": "public subnets",
+            "Export": {
+                "Name": {
+                    "Fn::Sub": "publickalai-SubnetID"
+                }
+            },
+            "Value": {
+                "Ref": "publickalai"
+            }
+        }
+    },
+    "Resources": {
+        "IGWAttachment": {
+            "Properties": {
+                "InternetGatewayId": {
+                    "Ref": "InternetGateway"
+                },
+                "VpcId": {
+                    "Ref": "VPC"
+                }
+            },
+            "Type": "AWS::EC2::VPCGatewayAttachment"
+        },
+        "IGWAttachmentVPC1": {
+            "Properties": {
+                "InternetGatewayId": {
+                    "Ref": "InternetGatewayVPC1"
+                },
+                "VpcId": {
+                    "Ref": "VPC1"
+                }
+            },
+            "Type": "AWS::EC2::VPCGatewayAttachment"
+        },
+        "IGWAttachmentVPC2": {
+            "Properties": {
+                "InternetGatewayId": {
+                    "Ref": "InternetGatewayVPC2"
+                },
+                "VpcId": {
+                    "Ref": "VPC2"
+                }
+            },
+            "Type": "AWS::EC2::VPCGatewayAttachment"
+        },
+        "IGWRoute": {
+            "DependsOn": "IGWAttachment",
+            "Properties": {
+                "DestinationCidrBlock": "0.0.0.0/0",
+                "GatewayId": {
+                    "Ref": "InternetGateway"
+                },
+                "RouteTableId": {
+                    "Ref": "RouteTable"
+                }
+            },
+            "Type": "AWS::EC2::Route"
+        },
+        "IGWRouteVPC1": {
+            "DependsOn": "IGWAttachmentVPC1",
+            "Properties": {
+                "DestinationCidrBlock": "0.0.0.0/0",
+                "GatewayId": {
+                    "Ref": "InternetGatewayVPC1"
+                },
+                "RouteTableId": {
+                    "Ref": "RouteTableVPC1"
+                }
+            },
+            "Type": "AWS::EC2::Route"
+        },
+        "IGWRouteVPC2": {
+            "DependsOn": "IGWAttachmentVPC2",
+            "Properties": {
+                "DestinationCidrBlock": "0.0.0.0/0",
+                "GatewayId": {
+                    "Ref": "InternetGatewayVPC2"
+                },
+                "RouteTableId": {
+                    "Ref": "RouteTableVPC2"
+                }
+            },
+            "Type": "AWS::EC2::Route"
+        },
+        "InternetGateway": {
+            "Properties": {
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "kalaiVPC"
+                    }
+                ]
+            },
+            "Type": "AWS::EC2::InternetGateway"
+        },
+        "InternetGatewayVPC1": {
+            "Properties": {
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "VPC1"
+                    }
+                ]
+            },
+            "Type": "AWS::EC2::InternetGateway"
+        },
+        "InternetGatewayVPC2": {
+            "Properties": {
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "VPC2"
+                    }
+                ]
+            },
+            "Type": "AWS::EC2::InternetGateway"
+        },
+        "RouteTable": {
+            "Properties": {
+                "Tags": [
+                    {
+                        "Key": "Application",
+                        "Value": {
+                            "Ref": "AWS::StackName"
+                        }
+                    },
+                    {
+                        "Key": "Name",
+                        "Value": "Public_kalaiVPC"
+                    }
+                ],
+                "VpcId": {
+                    "Ref": "VPC"
+                }
+            },
+            "Type": "AWS::EC2::RouteTable"
+        },
+        "RouteTableVPC1": {
+            "Properties": {
+                "Tags": [
+                    {
+                        "Key": "Application",
+                        "Value": {
+                            "Ref": "AWS::StackName"
+                        }
+                    },
+                    {
+                        "Key": "Name",
+                        "Value": "Public_VPC1"
+                    }
+                ],
+                "VpcId": {
+                    "Ref": "VPC1"
+                }
+            },
+            "Type": "AWS::EC2::RouteTable"
+        },
+        "RouteTableVPC2": {
+            "Properties": {
+                "Tags": [
+                    {
+                        "Key": "Application",
+                        "Value": {
+                            "Ref": "AWS::StackName"
+                        }
+                    },
+                    {
+                        "Key": "Name",
+                        "Value": "Public_VPC2"
+                    }
+                ],
+                "VpcId": {
+                    "Ref": "VPC2"
+                }
+            },
+            "Type": "AWS::EC2::RouteTable"
+        },
+        "SecurityGroupprivate": {
+            "Properties": {
+                "GroupDescription": "private securtity group allow all access",
+                "GroupName": "kalaiVPC_private",
+                "SecurityGroupIngress": [
+                    {
+                        "CidrIp": "10.0.2.0/24",
+                        "FromPort": 80,
+                        "IpProtocol": "tcp",
+                        "ToPort": 80
+                    },
+                    {
+                        "CidrIp": "10.0.2.0/24",
+                        "FromPort": 22,
+                        "IpProtocol": "tcp",
+                        "ToPort": 22
+                    }
+                ],
+                "VpcId": {
+                    "Ref": "VPC"
+                }
+            },
+            "Type": "AWS::EC2::SecurityGroup"
+        },
+        "SecurityGroupprivateVPC1": {
+            "Properties": {
+                "GroupDescription": "private securtity group allow all access",
+                "GroupName": "Private_VPC1",
+                "SecurityGroupIngress": [
+                    {
+                        "CidrIp": "10.0.2.0/24",
+                        "FromPort": 80,
+                        "IpProtocol": "tcp",
+                        "ToPort": 80
+                    },
+                    {
+                        "CidrIp": "10.0.2.0/24",
+                        "FromPort": 22,
+                        "IpProtocol": "tcp",
+                        "ToPort": 22
+                    }
+                ],
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "Private_VPC1"
+                    }
+                ],
+                "VpcId": {
+                    "Ref": "VPC1"
+                }
+            },
+            "Type": "AWS::EC2::SecurityGroup"
+        },
+        "SecurityGroupprivateVPC2": {
+            "Properties": {
+                "GroupDescription": "private securtity group allow all access",
+                "GroupName": "Private_VPC2",
+                "SecurityGroupIngress": [
+                    {
+                        "CidrIp": "10.0.2.0/24",
+                        "FromPort": 80,
+                        "IpProtocol": "tcp",
+                        "ToPort": 80
+                    },
+                    {
+                        "CidrIp": "10.0.2.0/24",
+                        "FromPort": 22,
+                        "IpProtocol": "tcp",
+                        "ToPort": 22
+                    }
+                ],
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "private_VPC2"
+                    }
+                ],
+                "VpcId": {
+                    "Ref": "VPC2"
+                }
+            },
+            "Type": "AWS::EC2::SecurityGroup"
+        },
+        "SecurityGrouppublic": {
+            "Properties": {
+                "GroupDescription": "Public securtity group allow all access",
+                "GroupName": "kalaiVPC_public",
+                "SecurityGroupIngress": [
+                    {
+                        "CidrIp": "0.0.0.0/0",
+                        "FromPort": 80,
+                        "IpProtocol": "tcp",
+                        "ToPort": 80
+                    },
+                    {
+                        "CidrIp": "0.0.0.0/0",
+                        "FromPort": 22,
+                        "IpProtocol": "tcp",
+                        "ToPort": 22
+                    }
+                ],
+                "VpcId": {
+                    "Ref": "VPC"
+                }
+            },
+            "Type": "AWS::EC2::SecurityGroup"
+        },
+        "SecurityGrouppublicVPC1": {
+            "Properties": {
+                "GroupDescription": "Public securtity group allow all access",
+                "GroupName": "Public_VPC1",
+                "SecurityGroupIngress": [
+                    {
+                        "CidrIp": "0.0.0.0/0",
+                        "FromPort": 80,
+                        "IpProtocol": "tcp",
+                        "ToPort": 80
+                    },
+                    {
+                        "CidrIp": "0.0.0.0/0",
+                        "FromPort": 22,
+                        "IpProtocol": "tcp",
+                        "ToPort": 22
+                    }
+                ],
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "Public_VPC1"
+                    }
+                ],
+                "VpcId": {
+                    "Ref": "VPC1"
+                }
+            },
+            "Type": "AWS::EC2::SecurityGroup"
+        },
+        "SecurityGrouppublicVPC2": {
+            "Properties": {
+                "GroupDescription": "Public securtity group allow all access",
+                "GroupName": "Public_VPC2",
+                "SecurityGroupIngress": [
+                    {
+                        "CidrIp": "0.0.0.0/0",
+                        "FromPort": 80,
+                        "IpProtocol": "tcp",
+                        "ToPort": 80
+                    },
+                    {
+                        "CidrIp": "0.0.0.0/0",
+                        "FromPort": 22,
+                        "IpProtocol": "tcp",
+                        "ToPort": 22
+                    }
+                ],
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "Public_VPC2"
+                    }
+                ],
+                "VpcId": {
+                    "Ref": "VPC2"
+                }
+            },
+            "Type": "AWS::EC2::SecurityGroup"
+        },
+        "SubnetRouteTableAssociation": {
+            "Properties": {
+                "RouteTableId": {
+                    "Ref": "RouteTable"
+                },
+                "SubnetId": {
+                    "Ref": "publickalai"
+                }
+            },
+            "Type": "AWS::EC2::SubnetRouteTableAssociation"
+        },
+        "SubnetRouteTableAssociationVPC1": {
+            "Properties": {
+                "RouteTableId": {
+                    "Ref": "RouteTableVPC1"
+                },
+                "SubnetId": {
+                    "Ref": "publicVPC1"
+                }
+            },
+            "Type": "AWS::EC2::SubnetRouteTableAssociation"
+        },
+        "SubnetRouteTableAssociationVPC2": {
+            "Properties": {
+                "RouteTableId": {
+                    "Ref": "RouteTableVPC2"
+                },
+                "SubnetId": {
+                    "Ref": "publicVPC2"
+                }
+            },
+            "Type": "AWS::EC2::SubnetRouteTableAssociation"
+        },
+        "VPC": {
+            "Properties": {
+                "CidrBlock": "10.0.0.0/16",
+                "EnableDnsHostnames": "true",
+                "EnableDnsSupport": "true",
+                "InstanceTenancy": "default",
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "kalaiVPC"
+                    },
+                    {
+                        "Key": "app",
+                        "Value": {
+                            "Ref": "AWS::StackName"
+                        }
+                    }
+                ]
+            },
+            "Type": "AWS::EC2::VPC"
+        },
+        "VPC1": {
+            "Properties": {
+                "CidrBlock": "10.1.0.0/16",
+                "EnableDnsHostnames": "true",
+                "EnableDnsSupport": "true",
+                "InstanceTenancy": "default",
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "VPC1"
+                    },
+                    {
+                        "Key": "app",
+                        "Value": {
+                            "Ref": "AWS::StackName"
+                        }
+                    }
+                ]
+            },
+            "Type": "AWS::EC2::VPC"
+        },
+        "VPC2": {
+            "Properties": {
+                "CidrBlock": "10.2.0.0/16",
+                "EnableDnsHostnames": "true",
+                "EnableDnsSupport": "true",
+                "InstanceTenancy": "default",
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "VPC2"
+                    },
+                    {
+                        "Key": "app",
+                        "Value": {
+                            "Ref": "AWS::StackName"
+                        }
+                    }
+                ]
+            },
+            "Type": "AWS::EC2::VPC"
+        },
+        "privateVPC1": {
+            "Properties": {
+                "AvailabilityZone": "ap-south-1a",
+                "CidrBlock": "10.1.1.0/24",
+                "MapPublicIpOnLaunch": "false",
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "privateVPC1"
+                    },
+                    {
+                        "Key": "VPC",
+                        "Value": "VPC1"
+                    }
+                ],
+                "VpcId": {
+                    "Ref": "VPC1"
+                }
+            },
+            "Type": "AWS::EC2::Subnet"
+        },
+        "privateVPC2": {
+            "Properties": {
+                "AvailabilityZone": "ap-south-1a",
+                "CidrBlock": "10.2.1.0/24",
+                "MapPublicIpOnLaunch": "false",
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "privateVPC2"
+                    },
+                    {
+                        "Key": "VPC",
+                        "Value": "VPC2"
+                    }
+                ],
+                "VpcId": {
+                    "Ref": "VPC2"
+                }
+            },
+            "Type": "AWS::EC2::Subnet"
+        },
+        "privatekalai": {
+            "Properties": {
+                "AvailabilityZone": "ap-south-1a",
+                "CidrBlock": "10.0.1.0/24",
+                "MapPublicIpOnLaunch": "false",
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "privatekalai"
+                    },
+                    {
+                        "Key": "VPC",
+                        "Value": "kalaiVPC"
+                    }
+                ],
+                "VpcId": {
+                    "Ref": "VPC"
+                }
+            },
+            "Type": "AWS::EC2::Subnet"
+        },
+        "publicVPC1": {
+            "Properties": {
+                "AvailabilityZone": "ap-south-1a",
+                "CidrBlock": "10.1.2.0/24",
+                "MapPublicIpOnLaunch": "true",
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "publicVPC1"
+                    },
+                    {
+                        "Key": "VPC",
+                        "Value": "VPC1"
+                    }
+                ],
+                "VpcId": {
+                    "Ref": "VPC1"
+                }
+            },
+            "Type": "AWS::EC2::Subnet"
+        },
+        "publicVPC2": {
+            "Properties": {
+                "AvailabilityZone": "ap-south-1a",
+                "CidrBlock": "10.2.2.0/24",
+                "MapPublicIpOnLaunch": "true",
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "publicVPC2"
+                    },
+                    {
+                        "Key": "VPC",
+                        "Value": "VPC2"
+                    }
+                ],
+                "VpcId": {
+                    "Ref": "VPC2"
+                }
+            },
+            "Type": "AWS::EC2::Subnet"
+        },
+        "publickalai": {
+            "Properties": {
+                "AvailabilityZone": "ap-south-1b",
+                "CidrBlock": "10.0.2.0/24",
+                "MapPublicIpOnLaunch": "true",
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "publickalai"
+                    },
+                    {
+                        "Key": "VPC",
+                        "Value": "kalaiVPC"
+                    }
+                ],
+                "VpcId": {
+                    "Ref": "VPC"
+                }
+            },
+            "Type": "AWS::EC2::Subnet"
+        }
+    }
+}
