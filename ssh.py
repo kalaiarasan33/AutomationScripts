@@ -2,7 +2,7 @@ import paramiko
 
 ip='server ip'
 user='username'
-pass='password'
+passw='password'
 
 ssh=paramiko.SSHClient()
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
