@@ -1,15 +1,14 @@
 import paramiko
 
 ip='server ip'
-port=22
-username='username'
-password='password'
+user='username'
+pass='password'
 
 ssh=paramiko.SSHClient()
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-ssh.connect(ip,port,username,password)
+ssh.connect(ip, port=22, username=user, password=pass)
 commands = ["ls -al","df -h"]
 for command in commands:
-    stdin, stdout, stderr = c.exec_command(command)
+    stdin, stdout, stderr = ssh.exec_command(command)
     print (stdout.read())
     print (stderr.read())
