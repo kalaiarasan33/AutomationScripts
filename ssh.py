@@ -1,4 +1,3 @@
-import json
 import paramiko
 
 ip='server ip'
