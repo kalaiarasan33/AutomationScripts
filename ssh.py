@@ -10,5 +10,6 @@ ssh.connect(ip, port=22, username=user, password=pass)
 commands = ["ls -al","df -h"]
 for command in commands:
     stdin, stdout, stderr = ssh.exec_command(command)
-    print (stdout.read())
-    print (stderr.read())
+    outlines=stdout.readlines()
+    resp=''.join(outlines)  
+    print(resp)
