@@ -1,0 +1,32 @@
+
+  construction Description: Joisted Masonry  ,  constructionCode: 2
+  construction Description: Masonry Non Combustible  ,  constructionCode: 4
+  construction Description: Frame  ,  constructionCode: 1
+  construction Description: Non Combustible  ,  constructionCode: 3
+  construction Description: Concrete  ,  constructionCode: 1
+  construction Description: FR  ,  constructionCode: 6
+  construction Description: JM  ,  constructionCode: 2
+  construction Description: Metal  ,  constructionCode: 3
+  construction Description: brick  ,  constructionCode: 1
+  construction Description: Concrete/Wood  ,  constructionCode: 1
+  construction Description: MNC  ,  constructionCode: 4
+  construction Description: CMU  ,  constructionCode: 4
+  construction Description: Wood Frame  ,  constructionCode: 1
+  construction Description: NC  ,  constructionCode: 3
+  construction Description: Masonry  ,  constructionCode: 4
+  construction Description: MFR  ,  constructionCode: 5
+  construction Description: Fire Resistive  ,  constructionCode: 6
+  construction Description: Masonry Non combustible  ,  constructionCode: 4
+  construction Description: Non combustible  ,  constructionCode: 3
+  construction Description: Brick  ,  constructionCode: 2
+  construction Description: Concrete Block  ,  constructionCode: 4
+  construction Description: Concrete Steel  ,  constructionCode: 4
+  construction Description: Reinforced Concrete  ,  constructionCode: 2
+  construction Description: frame  ,  constructionCode: 1
+  construction Description: Concrete Tilt  ,  constructionCode: 4
+  construction Description: Masonry/Non Combustible  ,  constructionCode: 3
+  construction Description: Modified Fire Resistive  ,  constructionCode: 5
+  construction Description: Steel  ,  constructionCode: 1
+  construction Description: combustible  |WOOD FRAME  ,  constructionCode: 1
+  construction Description: STEEL  ,  constructionCode: 1
+  construction Description: MASONRY CONST/WOOD ROOF  ,  constructionCode: 2

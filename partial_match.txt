@@ -1,0 +1,436 @@
+
+  construction Description: Concrete Masonry  ,  constructionCode: 2
+  construction Description: Joisted Masonry = 2  ,  constructionCode: 2
+  construction Description: Joisted
+Masonry  ,  constructionCode: 2
+  construction Description: Non Combustible  ,  constructionCode: 4
+  construction Description: Light Non Combustible  ,  constructionCode: 4
+  construction Description: Non combustible  ,  constructionCode: 4
+  construction Description: Masonry   Non Combustible  ,  constructionCode: 4
+  construction Description: Masonry/Non Combustible  ,  constructionCode: 4
+  construction Description: Masonry  Non Combustible  ,  constructionCode: 4
+  construction Description: Non Combustible = 3  ,  constructionCode: 4
+  construction Description: Masonry Non Combustible = 4  ,  constructionCode: 4
+  construction Description: Non Combustible = 4  ,  constructionCode: 4
+  construction Description: Masonry Non combustible  ,  constructionCode: 4
+  construction Description: ISO 4  Masonry Non Combustible  ,  constructionCode: 4
+  construction Description: ISO 4 Masonry Non Combustible  ,  constructionCode: 4
+  construction Description: frame  ,  constructionCode: 1
+  construction Description: Frame = 1  ,  constructionCode: 1
+  construction Description: Light Non Combustible  ,  constructionCode: 3
+  construction Description: Masonry Non Combustible  ,  constructionCode: 3
+  construction Description: Non combustible  ,  constructionCode: 3
+  construction Description: Masonry   Non Combustible  ,  constructionCode: 3
+  construction Description: Masonry/Non Combustible  ,  constructionCode: 3
+  construction Description: Masonry  Non Combustible  ,  constructionCode: 3
+  construction Description: Non Combustible = 3  ,  constructionCode: 3
+  construction Description: Masonry Non Combustible = 4  ,  constructionCode: 3
+  construction Description: Non Combustible = 4  ,  constructionCode: 3
+  construction Description: Masonry Non combustible  ,  constructionCode: 3
+  construction Description: combustible  ,  constructionCode: 3
+  construction Description: Non combustible  Metal  ,  constructionCode: 3
+  construction Description: Concrete Tilt Wall  ,  constructionCode: 4
+  construction Description: Concrete T ilt Wall  ,  constructionCode: 4
+  construction Description: Concrete tilt up  ,  constructionCode: 4
+  construction Description: Concrete tilt up & Steel  ,  constructionCode: 4
+  construction Description: concrete tilt Wall  ,  constructionCode: 4
+  construction Description: Concrete tilt wall  ,  constructionCode: 4
+  construction Description: Concrete Tilt  ,  constructionCode: 4
+  construction Description: Concrete/Tilt Up  ,  constructionCode: 4
+  construction Description: Concrete Tilt up  ,  constructionCode: 4
+  construction Description: concrete Tilt up  ,  constructionCode: 4
+  construction Description: concrete tilt up  ,  constructionCode: 4
+  construction Description: Non Combustible  ,  constructionCode: 1
+  construction Description: Non combustible  ,  constructionCode: 1
+  construction Description: Non Combustible = 3  ,  constructionCode: 1
+  construction Description: Non Combustible = 4  ,  constructionCode: 1
+  construction Description: combustible  ,  constructionCode: 1
+  construction Description: Concrete  ,  constructionCode: 1
+  construction Description: Concrete Panels & Steel  ,  constructionCode: 1
+  construction Description: Concrete Block & Steel  ,  constructionCode: 1
+  construction Description: Concrete/Metal  ,  constructionCode: 1
+  construction Description: Concrete Block / Steel  ,  constructionCode: 1
+  construction Description: concrete & steel  ,  constructionCode: 1
+  construction Description: concrete  steel  ,  constructionCode: 1
+  construction Description: Concrete  steel rack  ,  constructionCode: 1
+  construction Description: Concrete Steel  ,  constructionCode: 1
+  construction Description: Concrete & Steel  ,  constructionCode: 1
+  construction Description: Concrete & Steel Frame  ,  constructionCode: 1
+  construction Description: Poured Concrete
+Steel  ,  constructionCode: 1
+  construction Description: Concrete/Wood  ,  constructionCode: 1
+  construction Description: Concrete Steel  ,  constructionCode: 1
+  construction Description: Concrete & Steel  ,  constructionCode: 1
+  construction Description: Concrete Block  ,  constructionCode: 1
+  construction Description: Concrete/Metal  ,  constructionCode: 1
+  construction Description: Concrete Tilt  ,  constructionCode: 1
+  construction Description: Steel/Concrete  ,  constructionCode: 1
+  construction Description: Concrete/Wood  ,  constructionCode: 1
+  construction Description: concrete  ,  constructionCode: 1
+  construction Description: Concrete block  ,  constructionCode: 1
+  construction Description: Concrete wood  ,  constructionCode: 1
+  construction Description: Concrete Steel  ,  constructionCode: 1
+  construction Description: Concrete
+Stucco  ,  constructionCode: 1
+  construction Description: Steel Concrete  ,  constructionCode: 1
+  construction Description: block concrete  ,  constructionCode: 1
+  construction Description: Bricks concrete  ,  constructionCode: 1
+  construction Description: MFR  ,  constructionCode: 6
+  construction Description: metal  ,  constructionCode: 3
+  construction Description: Brick  ,  constructionCode: 1
+  construction Description: Steel Block  ,  constructionCode: 4
+  construction Description: Steel / Brick  ,  constructionCode: 4
+  construction Description: Metal Brick  ,  constructionCode: 4
+  construction Description: Steel Structure Brick  ,  constructionCode: 4
+  construction Description: Non Combustible  ,  constructionCode: 3
+  construction Description: Light Non Combustible  ,  constructionCode: 3
+  construction Description: Masonry Non Combustible  ,  constructionCode: 3
+  construction Description: Non combustible  ,  constructionCode: 3
+  construction Description: Masonry   Non Combustible  ,  constructionCode: 3
+  construction Description: Masonry/Non Combustible  ,  constructionCode: 3
+  construction Description: Masonry  Non Combustible  ,  constructionCode: 3
+  construction Description: Non Combustible = 3  ,  constructionCode: 3
+  construction Description: Non Combustible = 4  ,  constructionCode: 3
+  construction Description: Masonry Non combustible  ,  constructionCode: 3
+  construction Description: combustible  ,  constructionCode: 3
+  construction Description: Non combustible  Metal  ,  constructionCode: 3
+  construction Description: Concrete  ,  constructionCode: 1
+  construction Description: Concrete wood  ,  constructionCode: 1
+  construction Description: #1 Wood Frame  ,  constructionCode: 1
+  construction Description: Wood Frame  ,  constructionCode: 1
+  construction Description: wood frame  ,  constructionCode: 1
+  construction Description: Wood frame  ,  constructionCode: 1
+  construction Description: wood frame slab  ,  constructionCode: 1
+  construction Description: NC  ,  constructionCode: 4
+  construction Description: Wood frame/stucco exterior  ,  constructionCode: 1
+  construction Description: wood frame concrete block brick exterior  ,  constructionCode: 1
+  construction Description: wood frame interior / stucco exterior  ,  constructionCode: 1
+  construction Description: wood frame  concrete block stucco ext.  ,  constructionCode: 1
+  construction Description: Wood Frame brick veneer  ,  constructionCode: 1
+  construction Description: wood frame concrete slab  ,  constructionCode: 1
+  construction Description: wood frame / brick exterior  ,  constructionCode: 1
+  construction Description: Concrete Masonry  ,  constructionCode: 1
+  construction Description: wood frame brick ext  ,  constructionCode: 1
+  construction Description: frame/brick veneer  ,  constructionCode: 1
+  construction Description: Wood Frame brick veneer  ,  constructionCode: 1
+  construction Description: Wood frame brick exterior  ,  constructionCode: 1
+  construction Description: Wood frame / sprinklers  ,  constructionCode: 1
+  construction Description: wood frame / brick exterior  ,  constructionCode: 1
+  construction Description: Wood frame brick ext  ,  constructionCode: 1
+  construction Description: Reinforce concrete  steel frame  brick veneer  ,  constructionCode: 1
+  construction Description: Grid iron structured steel  brick veneer  ,  constructionCode: 1
+  construction Description: Concrete  steel rack  couplers  ,  constructionCode: 1
+  construction Description: Concrete  steel rack  ,  constructionCode: 1
+  construction Description: Wood Stucco  ,  constructionCode: 1
+  construction Description: Wood frame  concrete  ,  constructionCode: 1
+  construction Description: wood frame & stucco  ,  constructionCode: 1
+  construction Description: frame stucco  ,  constructionCode: 1
+  construction Description: Metal frame Stucco  ,  constructionCode: 1
+  construction Description: wood frame & siding  ,  constructionCode: 1
+  construction Description: wood frame siding  ,  constructionCode: 1
+  construction Description: wood frame interior / stucco exterior  ,  constructionCode: 1
+  construction Description: wood frame brick ext  ,  constructionCode: 1
+  construction Description: frame/brick veneer  ,  constructionCode: 1
+  construction Description: Wood Frame brick veneer  ,  constructionCode: 1
+  construction Description: Wood frame brick exterior  ,  constructionCode: 1
+  construction Description: Wood frame / sprinklers  ,  constructionCode: 1
+  construction Description: wood frame / brick exterior  ,  constructionCode: 1
+  construction Description: Wood frame brick ext  ,  constructionCode: 1
+  construction Description: Wood frame/stucco exterior  ,  constructionCode: 1
+  construction Description: Wood frame brick exterior  ,  constructionCode: 1
+  construction Description: wood frame / brick exterior  ,  constructionCode: 1
+  construction Description: wood frame interior / stucco exterior  ,  constructionCode: 1
+  construction Description: wood frame stucco exterior  ,  constructionCode: 1
+  construction Description: Masonry  ,  constructionCode: 4
+  construction Description: Maonry wood  ,  constructionCode: 4
+  construction Description: Masonry steel  ,  constructionCode: 4
+  construction Description: Masonry Tilt Wall  ,  constructionCode: 4
+  construction Description: Masonry & Metal  ,  constructionCode: 4
+  construction Description: Masonry structure
+FR  ,  constructionCode: 4
+  construction Description: Concrete Block & Steel  ,  constructionCode: 1
+  construction Description: Concrete Block / Steel  ,  constructionCode: 1
+  construction Description: Concrete Block non sprinklered  ,  constructionCode: 1
+  construction Description: Concrete Block
+Brick  ,  constructionCode: 1
+  construction Description: #1 Wood Frame  ,  constructionCode: 1
+  construction Description: wood frame  ,  constructionCode: 1
+  construction Description: Wood frame  ,  constructionCode: 1
+  construction Description: wood frame & siding  ,  constructionCode: 1
+  construction Description: Wood frame/stucco exterior  ,  constructionCode: 1
+  construction Description: Wood frame brick exterior  ,  constructionCode: 1
+  construction Description: Wood frame  concrete  ,  constructionCode: 1
+  construction Description: wood frame / brick exterior  ,  constructionCode: 1
+  construction Description: wood frame block exterior  ,  constructionCode: 1
+  construction Description: wood frame interior / stucco exterior  ,  constructionCode: 1
+  construction Description: wood frame & stucco  ,  constructionCode: 1
+  construction Description: wood frame stucco exterior  ,  constructionCode: 1
+  construction Description: Wood frame interior stucco exterior no sprinkler  ,  constructionCode: 1
+  construction Description: frame interior / stucco exterior  ,  constructionCode: 1
+  construction Description: wood frame / siding exteior  ,  constructionCode: 1
+  construction Description: Steel frame  flat roof  stucco exterior  ,  constructionCode: 1
+  construction Description: structual steel  ,  constructionCode: 3
+  construction Description: Non combustible  Metal  ,  constructionCode: 3
+  construction Description: Steel Frame & Concrete  ,  constructionCode: 3
+  construction Description: Concrete & Frame  ,  constructionCode: 1
+  construction Description: concrete block steel frame  ,  constructionCode: 1
+  construction Description: concrete slab / steel frame  ,  constructionCode: 1
+  construction Description: Concrete  steel rack  ,  constructionCode: 1
+  construction Description: Concrete Steel  ,  constructionCode: 1
+  construction Description: Concrete & Steel Frame  ,  constructionCode: 1
+  construction Description: #1 Wood Frame  ,  constructionCode: 1
+  construction Description: Wood Frame  ,  constructionCode: 1
+  construction Description: wood frame  ,  constructionCode: 1
+  construction Description: Wood frame  ,  constructionCode: 1
+  construction Description: Concrete Block  ,  constructionCode: 1
+  construction Description: Concrete Block & Steel  ,  constructionCode: 1
+  construction Description: Concrete Block / Steel  ,  constructionCode: 1
+  construction Description: Concrete block  ,  constructionCode: 1
+  construction Description: concrete block & stucco  ,  constructionCode: 1
+  construction Description: CBS Concrete Reinforced Block & Stucco  ,  constructionCode: 1
+  construction Description: Concrete
+Stucco  ,  constructionCode: 1
+  construction Description: Concrete Block
+Brick  ,  constructionCode: 1
+  construction Description: MNC  ,  constructionCode: 3
+  construction Description: Metal/Masonry  ,  constructionCode: 4
+  construction Description: Masonry/Steel  ,  constructionCode: 4
+  construction Description: Masonry steel  ,  constructionCode: 4
+  construction Description: masonry  ,  constructionCode: 4
+  construction Description: CMU/masonry  ,  constructionCode: 4
+  construction Description: FR  ,  constructionCode: 5
+  construction Description: Reinforced Concrete  ,  constructionCode: 1
+  construction Description: Reinforced Concrete Steel  ,  constructionCode: 1
+  construction Description: Reinforced Concrete  ,  constructionCode: 1
+  construction Description: Precast Concrete  ,  constructionCode: 1
+  construction Description: Precaste Concrete  ,  constructionCode: 1
+  construction Description: Reinforced Concrete Steel  ,  constructionCode: 1
+  construction Description: Fire resistive  ,  constructionCode: 6
+  construction Description: Fire Resistive  ,  constructionCode: 6
+  construction Description: Modified Fire Resistive  ,  constructionCode: 6
+  construction Description: Fire Resistive/  ,  constructionCode: 6
+  construction Description: Reinforced Concrete  ,  constructionCode: 1
+  construction Description: Fire Resistive  ,  constructionCode: 3
+  construction Description: Fire Resist. Steel  ,  constructionCode: 3
+  construction Description: Metal  ,  constructionCode: 3
+  construction Description: N/A  |Metal  ,  constructionCode: 3
+  construction Description: mnc  ,  constructionCode: 3
+  construction Description: tilt wall  ,  constructionCode: 4
+  construction Description: Tiltwall  ,  constructionCode: 4
+  construction Description: Tilt wall  ,  constructionCode: 4
+  construction Description: Reinforce concrete  steel frame  brick veneer  ,  constructionCode: 1
+  construction Description: Concrete Block / Steel  ,  constructionCode: 2
+  construction Description: Masonry Non Combustible  ,  constructionCode: 4
+  construction Description: Non combustible  ,  constructionCode: 4
+  construction Description: Masonry   Non Combustible  ,  constructionCode: 4
+  construction Description: Masonry/Non Combustible  ,  constructionCode: 4
+  construction Description: Masonry  Non Combustible  ,  constructionCode: 4
+  construction Description: Masonry Non Combustible = 4  ,  constructionCode: 4
+  construction Description: Masonry Non combustible  ,  constructionCode: 4
+  construction Description: ISO 4  Masonry Non Combustible  ,  constructionCode: 4
+  construction Description: ISO 4 Masonry Non Combustible  ,  constructionCode: 4
+  construction Description: Fire resistive  ,  constructionCode: 6
+  construction Description: Modified Fire Resistive  ,  constructionCode: 6
+  construction Description: fire resistive  ,  constructionCode: 6
+  construction Description: Fire Resist. Steel  ,  constructionCode: 6
+  construction Description: Fire Resistive/  ,  constructionCode: 6
+  construction Description: ISO 6   Fire resistive  ,  constructionCode: 6
+  construction Description: Non Combustible  ,  constructionCode: 4
+  construction Description: Masonry Non Combustible  ,  constructionCode: 4
+  construction Description: Non combustible  ,  constructionCode: 4
+  construction Description: Masonry   Non Combustible  ,  constructionCode: 4
+  construction Description: Masonry/Non Combustible  ,  constructionCode: 4
+  construction Description: Masonry  Non Combustible  ,  constructionCode: 4
+  construction Description: Masonry Non Combustible = 4  ,  constructionCode: 4
+  construction Description: ISO 4  Masonry Non Combustible  ,  constructionCode: 4
+  construction Description: ISO 4 Masonry Non Combustible  ,  constructionCode: 4
+  construction Description: Non Combustible  ,  constructionCode: 3
+  construction Description: Light Non Combustible  ,  constructionCode: 3
+  construction Description: Masonry Non Combustible  ,  constructionCode: 3
+  construction Description: Masonry   Non Combustible  ,  constructionCode: 3
+  construction Description: Masonry/Non Combustible  ,  constructionCode: 3
+  construction Description: Masonry  Non Combustible  ,  constructionCode: 3
+  construction Description: Non Combustible = 3  ,  constructionCode: 3
+  construction Description: Non Combustible = 4  ,  constructionCode: 3
+  construction Description: Masonry Non combustible  ,  constructionCode: 3
+  construction Description: combustible  ,  constructionCode: 3
+  construction Description: Non combustible  Metal  ,  constructionCode: 3
+  construction Description: Masonry  ,  constructionCode: 4
+  construction Description: Masonry steel  ,  constructionCode: 4
+  construction Description: masonry  ,  constructionCode: 4
+  construction Description: Tilt Up  ,  constructionCode: 4
+  construction Description: brick  ,  constructionCode: 2
+  construction Description: Concrete Block  ,  constructionCode: 3
+  construction Description: Concrete Block & Steel  ,  constructionCode: 3
+  construction Description: Concrete/Metal  ,  constructionCode: 3
+  construction Description: Concrete wall  Metal Roof  ,  constructionCode: 3
+  construction Description: Concrete Block / Steel  ,  constructionCode: 3
+  construction Description: Concrete & Metal Shed  ,  constructionCode: 3
+  construction Description: Concrete block  ,  constructionCode: 3
+  construction Description: Concrete block  cement floor  ,  constructionCode: 3
+  construction Description: concrete block & stucco  ,  constructionCode: 3
+  construction Description: Cinder Block & Metal  ,  constructionCode: 3
+  construction Description: Concrete block/ Glass  ,  constructionCode: 3
+  construction Description: Concrete  ,  constructionCode: 4
+  construction Description: Concrete Block & Steel  ,  constructionCode: 4
+  construction Description: Concrete Block / Steel  ,  constructionCode: 4
+  construction Description: Concrete Tilt  ,  constructionCode: 4
+  construction Description: Brick concrete block  ,  constructionCode: 4
+  construction Description: concrete block  ,  constructionCode: 4
+  construction Description: concrete brick  ,  constructionCode: 4
+  construction Description: Concrete block  ,  constructionCode: 4
+  construction Description: wood concrete block  ,  constructionCode: 4
+  construction Description: concrete block brick  ,  constructionCode: 4
+  construction Description: Concrete wood  ,  constructionCode: 4
+  construction Description: Exterior Concrete Block  ,  constructionCode: 4
+  construction Description: Concrete block/ Glass  ,  constructionCode: 4
+  construction Description: Concrete  steel rack  ,  constructionCode: 4
+  construction Description: Concrete Steel  ,  constructionCode: 4
+  construction Description: Steel Concrete Block  ,  constructionCode: 4
+  construction Description: Concrete Block
+Brick  ,  constructionCode: 4
+  construction Description: Precast Concrete  ,  constructionCode: 1
+  construction Description: Precaste Concrete  ,  constructionCode: 1
+  construction Description: Masonry Non Combustible  ,  constructionCode: 4
+  construction Description: Masonry   Non Combustible  ,  constructionCode: 4
+  construction Description: Masonry/Non Combustible  ,  constructionCode: 4
+  construction Description: Masonry  Non Combustible  ,  constructionCode: 4
+  construction Description: Masonry Non Combustible = 4  ,  constructionCode: 4
+  construction Description: Masonry Non combustible  ,  constructionCode: 4
+  construction Description: ISO 4  Masonry Non Combustible  ,  constructionCode: 4
+  construction Description: ISO 4 Masonry Non Combustible  ,  constructionCode: 4
+  construction Description: Modified Fire Resistive  ,  constructionCode: 5
+  construction Description: Non Combustible  ,  constructionCode: 3
+  construction Description: Light Non Combustible  ,  constructionCode: 3
+  construction Description: Masonry Non Combustible  ,  constructionCode: 3
+  construction Description: Non combustible  ,  constructionCode: 3
+  construction Description: Masonry   Non Combustible  ,  constructionCode: 3
+  construction Description: Masonry/Non Combustible  ,  constructionCode: 3
+  construction Description: Masonry  Non Combustible  ,  constructionCode: 3
+  construction Description: Non Combustible = 3  ,  constructionCode: 3
+  construction Description: Non Combustible = 4  ,  constructionCode: 3
+  construction Description: Masonry Non combustible  ,  constructionCode: 3
+  construction Description: Concrete  ,  constructionCode: 4
+  construction Description: Concrete Panels & Steel  ,  constructionCode: 4
+  construction Description: Concrete Block  ,  constructionCode: 4
+  construction Description: Concrete Block & Steel  ,  constructionCode: 4
+  construction Description: Precast Concrete & Steel  ,  constructionCode: 4
+  construction Description: Concrete tilt up  ,  constructionCode: 4
+  construction Description: Concrete/Metal  ,  constructionCode: 4
+  construction Description: Concrete tilt up & Steel  ,  constructionCode: 4
+  construction Description: Concrete Block / Steel  ,  constructionCode: 4
+  construction Description: Concrete Tilt  ,  constructionCode: 4
+  construction Description: Concrete block  ,  constructionCode: 4
+  construction Description: Reinforced Concrete Steel  ,  constructionCode: 4
+  construction Description: concrete & steel  ,  constructionCode: 4
+  construction Description: concrete  steel  ,  constructionCode: 4
+  construction Description: Concrete  steel rack  ,  constructionCode: 4
+  construction Description: Concrete & Steel  ,  constructionCode: 4
+  construction Description: Concrete & Steel Frame  ,  constructionCode: 4
+  construction Description: Poured Concrete
+Steel  ,  constructionCode: 4
+  construction Description: Non Combustible  ,  constructionCode: 3
+  construction Description: Light Non Combustible  ,  constructionCode: 3
+  construction Description: Masonry Non Combustible  ,  constructionCode: 3
+  construction Description: Non combustible  ,  constructionCode: 3
+  construction Description: Masonry/Non Combustible  ,  constructionCode: 3
+  construction Description: Masonry Non combustible  ,  constructionCode: 3
+  construction Description: combustible  ,  constructionCode: 3
+  construction Description: Reinforced Concrete Steel  ,  constructionCode: 2
+  construction Description: Frame  ,  constructionCode: 1
+  construction Description: Concrete  ,  constructionCode: 4
+  construction Description: Concrete Block  ,  constructionCode: 4
+  construction Description: Concrete Tilt Wall  ,  constructionCode: 4
+  construction Description: Concrete T ilt Wall  ,  constructionCode: 4
+  construction Description: Concrete tilt up  ,  constructionCode: 4
+  construction Description: concrete tilt Wall  ,  constructionCode: 4
+  construction Description: Concrete tilt wall  ,  constructionCode: 4
+  construction Description: Concrete/Tilt Up  ,  constructionCode: 4
+  construction Description: Concrete block  ,  constructionCode: 4
+  construction Description: Concrete Tilt up  ,  constructionCode: 4
+  construction Description: concrete Tilt up  ,  constructionCode: 4
+  construction Description: concrete tilt up  ,  constructionCode: 4
+  construction Description: Concrete Steel  ,  constructionCode: 4
+  construction Description: Metal/Masonry  ,  constructionCode: 1
+  construction Description: Structural Steel/Masonry  ,  constructionCode: 1
+  construction Description: Masonry  ,  constructionCode: 1
+  construction Description: Metal / Masonry  ,  constructionCode: 1
+  construction Description: Steel/
+Masonry  ,  constructionCode: 1
+  construction Description: Non Combustible  ,  constructionCode: 3
+  construction Description: Masonry Non Combustible  ,  constructionCode: 3
+  construction Description: Non combustible  ,  constructionCode: 3
+  construction Description: Masonry   Non Combustible  ,  constructionCode: 3
+  construction Description: Masonry  Non Combustible  ,  constructionCode: 3
+  construction Description: Non Combustible = 3  ,  constructionCode: 3
+  construction Description: Masonry Non Combustible = 4  ,  constructionCode: 3
+  construction Description: Non Combustible = 4  ,  constructionCode: 3
+  construction Description: Masonry Non combustible  ,  constructionCode: 3
+  construction Description: ISO 4  Masonry Non Combustible  ,  constructionCode: 3
+  construction Description: ISO 4 Masonry Non Combustible  ,  constructionCode: 3
+  construction Description: Masonry  ,  constructionCode: 3
+  construction Description: Masonry/Steel  ,  constructionCode: 3
+  construction Description: Masonry & Metal  ,  constructionCode: 3
+  construction Description: Metal building  ,  constructionCode: 3
+  construction Description: FR  ,  constructionCode: 1
+  construction Description: Concrete Tilt Wall  ,  constructionCode: 4
+  construction Description: Concrete T ilt Wall  ,  constructionCode: 4
+  construction Description: Concrete/Metal  ,  constructionCode: 4
+  construction Description: Concrete tilt wall  ,  constructionCode: 4
+  construction Description: Concrete wall  Metal Roof  ,  constructionCode: 4
+  construction Description: Concrete & Frame  ,  constructionCode: 4
+  construction Description: Concrete & Metal Shed  ,  constructionCode: 4
+  construction Description: Masonry & Metal  ,  constructionCode: 4
+  construction Description: concrete & steel  ,  constructionCode: 4
+  construction Description: concrete  steel  ,  constructionCode: 4
+  construction Description: Concrete Steel  ,  constructionCode: 4
+  construction Description: Concrete & Steel  ,  constructionCode: 4
+  construction Description: Concrete  Pre Fab  ,  constructionCode: 4
+  construction Description: Block Masonry Steel  ,  constructionCode: 2
+  construction Description: Block  Masonry  Steel  ,  constructionCode: 2
+  construction Description: Metal / Masonry  ,  constructionCode: 2
+  construction Description: Fire resistive  ,  constructionCode: 5
+  construction Description: Fire Resistive  ,  constructionCode: 5
+  construction Description: fire resistive  ,  constructionCode: 5
+  construction Description: Fire Resistive/  ,  constructionCode: 5
+  construction Description: Fire resistive  ,  constructionCode: 6
+  construction Description: Fire Resistive  ,  constructionCode: 6
+  construction Description: Modified Fire Resistive  ,  constructionCode: 6
+  construction Description: fire resistive  ,  constructionCode: 6
+  construction Description: Fire Resistive/  ,  constructionCode: 6
+  construction Description: ISO 6   Fire resistive  ,  constructionCode: 6
+  construction Description: brick/stucco  ,  constructionCode: 1
+  construction Description: Reinforced Concrete  ,  constructionCode: 1
+  construction Description: concrete  steel  glass  ,  constructionCode: 1
+  construction Description: Concrete block/ Glass  ,  constructionCode: 1
+  construction Description: Concrete  steel rack  ,  constructionCode: 1
+  construction Description: Concrete Steel  ,  constructionCode: 1
+  construction Description: Concrete & Steel  ,  constructionCode: 1
+  construction Description: Concrete  Steel rack couplers  ,  constructionCode: 1
+  construction Description: Concrete & Steel Frame  ,  constructionCode: 1
+  construction Description: Concrete/Metal  ,  constructionCode: 1
+  construction Description: Concrete & Frame  ,  constructionCode: 1
+  construction Description: Concrete & Metal Shed  ,  constructionCode: 1
+  construction Description: Concrete  steel rack  ,  constructionCode: 1
+  construction Description: Concrete & Steel Frame  ,  constructionCode: 1
+  construction Description: Concrete  Pre Fab  ,  constructionCode: 1
+  construction Description: Fire resistive  ,  constructionCode: 1
+  construction Description: Fire Resistive  ,  constructionCode: 1
+  construction Description: Modified Fire Resistive  ,  constructionCode: 1
+  construction Description: Fire Resistive/  ,  constructionCode: 1
+  construction Description: Brick/Metal  ,  constructionCode: 1
+  construction Description: brick steel  ,  constructionCode: 1
+  construction Description: Concrete  ,  constructionCode: 1
+  construction Description: Concrete Block  ,  constructionCode: 1
+  construction Description: concrete brick  ,  constructionCode: 1
+  construction Description: Concrete block  ,  constructionCode: 1
+  construction Description: concrete/brick  ,  constructionCode: 1
+  construction Description: concrete slab/brick  ,  constructionCode: 1
+  construction Description: Concrete Block
+Brick  ,  constructionCode: 1
+  construction Description: Tilt up Concrete  ,  constructionCode: 2
+  construction Description: Tip up / concrete  ,  constructionCode: 2
+  construction Description: brick  concrete  ,  constructionCode: 2
+  construction Description: Steel  concrete  ,  constructionCode: 2
+  construction Description: steel  ,  constructionCode: 1
+  construction Description: CONCRETE  ,  constructionCode: 2
