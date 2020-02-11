@@ -1,0 +1,69 @@
+===================================================================================================================
+string = "Hello World"
+
+# get all-letters in uppercase
+
+# get all-letters in lowercase
+
+# capitalize the first letter
+
+# capitalize the first letter of words
+
+#converts uppercase and lowercase
+
+# remove all white spaces
+
+# removes white space from left
+
+# removes white space from right
+
+# splitting words
+
+# split words by comma
+
+# count how many times l is in the string
+
+# find the word Wo in the string
+
+# find the letters Wo in the string
+
+# add a : between every char
+
+ # add a white space between every char
+
+# find the length of the string
+
+======================================================================================================================================
+# concatenate a list of strings
+
+[‘the’, ‘quick’, ‘brown’, ‘fox’, ‘jumps’, ‘over’, ‘the’, ‘lazy’, ‘dog’]
+
+====================================================================================================================================
+
+x = "my string"
+
+# items start through end-1
+# items start through the rest of the list
+# items from the beginning through end-1
+# a copy of the whole list
+
+======================================================================================================================================
+
+# create empty list
+
+# x=["mouse", [8, 4, 6], ['a']] pick value 6 from the list
+
+# my_list = ['p','r','o','b','l','e','m'] remove 1st item from the list
+
+
+# my_list = ['p','r','o','b','l','e','m'] remove last  item from the list
+
+# my_list = ['p','r','o','b','l','e','m'] empty  list
+
+# my_list = ['p','r','o','b','l','e','m']  replace value u instead of b
+
+# my_list = ['p','r','o','b','l','o','e','m']  count the duplicate values
+
+# my_list = ['p','r','o','b','l','o','e','m']  append apple string in the list 
+
+# my_list = ['p','r','o','b','l','o','e','m']  reverse the list  
