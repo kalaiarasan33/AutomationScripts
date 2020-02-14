@@ -1,0 +1,35 @@
+# write in both while and for loop , get below output 
+
+a = 5
+
+b = 1
+
+
+----------Output---------
+
+5 * 1 = 5
+5 * 2 = 10
+5 * 3 = 15
+5 * 4 = 20
+5 * 5 = 25
+
+# write in both while and for loop , get below output 
+
+a = 1
+
+----------Output---------
+
+1 2 3 4 5 6 7 8 9 
+
+
+# print the title name and len of the character of the movie 
+
+my_movies = [['How I Met Your Mother', 'Friends', 'Silicon Valley'],
+    ['Family Guy', 'South Park', 'Rick and Morty'],
+    ['Breaking Bad', 'Game of Thrones', 'The Wire']]
+
+
+# Go through all the numbers up until 99. Print ‘fizz’ for every number that’s divisible by 3, 
+print ‘buzz’ for every number divisible by 5, and print ‘fizzbuzz’ for every number divisible by 3 and by 5! If the number is not divisible either by 3 or 5, 
+print a dash (‘-‘)!
+
