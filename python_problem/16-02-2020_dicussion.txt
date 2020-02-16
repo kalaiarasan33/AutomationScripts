@@ -1,0 +1,77 @@
+#16-02-2020
+# function
+
+# map , filter , reduce
+
+a=[0,1,2,3,4,5,6,7,8,9]
+"""
+b=[]
+def function(x):
+    for i in x:
+        if i % 2 == 0:
+            b.append(i)
+
+function(a)
+print(b)
+
+
+
+a =list(map(lambda x : (x * 2 ) , a))
+print(a)
+
+
+a=[ip1,ip2,ip3]
+
+def functions(a):
+    c=selct * from a:
+    return c
+
+q=[]
+for x in a:
+    z=function(x)
+    q.append(z)
+
+ 
+
+a =list(map(function(a) , a))
+print(a)
+ 
+"""
+
+#f = open(r'C:\Users\kbalaraman\learninng_python\learning.txt','r')
+a=[[1,"kalai"],[2,"sathish"]]
+f=open(r'C:\Users\kbalaraman\learninng_python\testfile.txt','w')
+for  x in a:
+    c="id {}: name {}\n".format(x[0],x[1])
+    f.write(c)
+f.close()
+f=open(r'C:\Users\kbalaraman\learninng_python\testfile.txt','r')
+print(f.read())
+
+f=open(r'C:\Users\kbalaraman\learninng_python\learning.txt','a')
+
+f.close()
+
+with open(r'C:\Users\kbalaraman\learninng_python\learning.txt','r') as f :
+    f.read()
+
+
+# user defined error
+
+class er(Exception):
+    pass
+class toolargeinteger(er):
+    pass
+class toosmallinteger(er):
+    pass
+
+a=int(input("Enter number:"))
+try:
+    if a > 10:
+        raise toolargeinteger
+    elif a < 10:
+        raise toosmallinteger
+except toolargeinteger:
+    print("Enter less than 10")
+except toosmallinteger:
+    print("Enter greater than 10")
