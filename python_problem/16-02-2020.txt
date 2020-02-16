@@ -1,0 +1,7 @@
+# use with key word and do operation read,write, append 
+
+# write a function to write months (ex.january,february..) in file, write in normal function .
+
+# write a function to write months (ex.january,february..) in file, use map method to do .
+
+# write user defined execption , write any use case
