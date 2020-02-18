@@ -1,0 +1,109 @@
+
+with open(r'C:\Users\kbalaraman\learninng_python\testfile.txt','r+') as f:
+    line=[line.split() for line in f.readlines()]
+    print(line)
+
+
+a=[]
+f=open(r'C:\Users\kbalaraman\learninng_python\testfile.txt','r+')
+for x in f.readlines():
+    line = x.split()
+    a.append(line)
+print(a)
+    
+
+"""class demo():
+    def __init__(self,a,b):
+        self.a = a
+        self.b = b
+    def add(self):
+        c=self.a + self.b
+        return c
+
+obj=demo(10,20)
+print(obj.add())"""
+
+"""class father():
+    f_name="fathername"
+    f_age=50
+class son(father):
+    s_name="sonname"
+    s_age=20
+
+obj=son()
+
+print(obj.f_name)
+
+class gfather():
+    gf_name="gfathername"
+    gf_age=70
+
+class father(gfather):
+    f_name="fathername"
+    f_age=50
+class son(father):
+    s_name="sonname"
+    s_age=20
+    gfather.gf_age=80
+    print(gfather.gf_age)
+
+obj=son()
+
+print(obj.gf_name)"""
+
+"""class gfather():
+    gf_name="gfathername"
+    gf_age=70
+
+class father():
+    f_name="fathername"
+    f_age=50
+class son(father,gfather):
+    s_name="sonname"
+    s_age=20
+    gfather.gf_age=80
+    print(gfather.gf_age)
+
+obj=son()
+
+print(obj.gf_name)
+"""
+
+"""class demo():
+    def add(self,a=None,b=None,c=None):
+        if a != None and b != None and c !=None:
+            d=a+b+c            
+        elif a != None and b != None :
+            d = a + b
+        return d
+            
+
+obj=demo()
+print(obj.add(10,20))"""
+        
+"""class demo():
+    def add(self,a,b):
+        c= a-b
+        return c
+class demo1(demo):
+    def add(self,a,b):
+        c= a+b
+        return c
+
+obj=demo1()
+print(obj.add(10,20))"""
+
+
+"""class demo():
+    def __init__(self,a,b,c):
+        self.a = a
+        self._b = b
+        self.__c = c
+
+
+obj=demo(10,20,30)
+print(obj.a)
+print(obj._b)
+dir(obj)
+print(obj._demo__c)"""
+
