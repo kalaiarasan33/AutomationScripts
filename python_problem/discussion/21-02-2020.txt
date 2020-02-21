@@ -1,0 +1,54 @@
+"""import requests
+import json
+import xmltodict
+import pprint
+url="http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL"
+#headers = {'content-type': 'application/soap+xml'}
+
+headers = {'content-type': 'text/xml; charset=utf-8'}
+body = """<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <CountryIntPhoneCode xmlns="http://www.oorsprong.org/websamples.countryinfo">
+      <sCountryISOCode>{}</sCountryISOCode>
+    </CountryIntPhoneCode>
+  </soap:Body>
+</soap:Envelope>""".format('ID')
+
+#xml to dict
+a=xmltodict.parse(body)
+
+#dict to json, json to dict (gives clear dictionary than xmtodict), dicttoxml
+c=xmltodict.unparse(json.loads(json.dumps(a)))
+#print(json.loads(json.dumps(a))['soap:Envelope']['soap:Body']['CountryIntPhoneCode']['sCountryISOCode'])
+r=requests.post(url,data=c,headers=headers)
+#print(r.headers)
+#print(r.text)
+#print(r.content)
+#print(r.status_code)
+
+
+b=json.dumps(xmltodict.parse(r.text))
+bb=json.loads(b)
+
+print(bb["soap:Envelope"]["soap:Body"]["m:CountryIntPhoneCodeResponse"]["m:CountryIntPhoneCodeResult"])
+
+"""
+
+
+
+
+import requests
+import json
+
+
+
+url="https://reqres.in/api/api/users"
+input={"name":"kalai","job":"devops_updated"}
+print(type(input))
+PtoJ=json.dumps(input)
+print("json input : ", PtoJ)
+r=requests.post(url,data=PtoJ)
+print("status code",r.status_code)
+print("\nresponse content ", r.text)
+print(json.loads(r.text)["id"])
