@@ -1,0 +1,48 @@
+import boto3
+
+from datetime import datetime, timedelta
+
+ec2=boto3.client('ec2')
+regions = ec2.describe_regions()
+
+cloudwatch=boto3.client('cloudwatch')
+
+
+
+
+regions_list=[]
+for x in regions["Regions"]:
+    regions_list.append(x["RegionName"])
+
+s3=boto3.client('s3')
+
+response = s3.list_buckets()
+
+for x in response["Buckets"]:
+    print(x["Name"])
+   
+
+res= cloudwatch.get_metric_statistics(
+    Namespace="AWS/S3",
+    MetricName="BucketSizeBytes",
+    Dimensions=[
+        {
+            "Name": "BucketName",
+            "Value": "mytttttt"
+        },
+        {
+            "Name": "StorageType",
+            "Value": "StandardStorage"
+        }
+    ],
+    StartTime=datetime.now() - timedelta(days=300),
+    EndTime=datetime.now(),
+    Period=86400,
+    Statistics=['Average']
+)
+
+bucket_size_bytes = res['Datapoints'][-1]['Average']
+print((bucket_size_bytes/1024)/1024)
+
+
+
