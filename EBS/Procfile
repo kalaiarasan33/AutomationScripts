@@ -1,1 +1,1 @@
-web: java -javaagent:/var/newrelic/newrelic.jar -Dnewrelic.config.app_name=Test -Dnewrelic.config.license_key=eu01xxe22591423ebb3ce85c2bc0c29293a6NRAL -jar helloworld-0.0.1-SNAPSHOT.jar
+web: java -javaagent:/var/newrelic/newrelic.jar -Dnewrelic.config.app_name=Test -Dnewrelic.config.license_key=license_key -jar helloworld-0.0.1-SNAPSHOT.jar
