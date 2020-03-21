@@ -1,1 +1,1 @@
-web: java -javaagent:/var/newrelic/newrelic.jar -Dnewrelic.config.app_name=Test -Dnewrelic.config.license_key=license_key -jar helloworld-0.0.1-SNAPSHOT.jar
+web: java -javaagent:/var/newrelic/newrelic.jar -Dnewrelic.config.app_name="$APP_NAME" -Dnewrelic.config.license_key="$LICENSE_KEY" -jar helloworld-0.0.1-SNAPSHOT.jar
